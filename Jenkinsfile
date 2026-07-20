@@ -18,7 +18,7 @@ pipeline {
             }
             when{
                 anyOf{
-                    branch "develop"
+                    branch "main"
                     branch "feature/*"
                 }
             }
