@@ -4,7 +4,7 @@ pipeline {
         stage("Dotnet restore"){
             when{
                 anyOf{
-                    branch "develop"
+                    branch "main"
                     branch "feature/*"
                 }
             }
@@ -29,7 +29,7 @@ pipeline {
             }
             when{
                 anyOf{
-                    branch "develop"
+                    branch "main"
                     branch "feature/*"
                 }
             }
